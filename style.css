@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-colors: linear-gradient(134deg, #343193 0%, #302C63 100%);
+    --primary-text-theme: #B52184;
+    --secondary-text-theme: #312D64;
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#astronaut {
+    padding-bottom: 1.6rem;
+    max-height: 37rem;
+}
+
+h1 {
+    color: var(--primary-text-theme);
+    font-size: 3.2rem;
+    font-weight: 900;
+}
+
+p {
+    color: var(--secondary-text-theme);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+textarea {
+    resize: none;
+}
+
+#arrowDown{
+    padding-top: 3.6rem;
+    padding-bottom: 9rem;
+    transition: filter 300ms;
+}
+
+#arrowDown:hover {
+    filter: brightness(0.7);
+}
+
+#steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--background-colors);
+    padding: 5.2rem;
+    gap: 5rem;
+}
+
+.card{
+    background: #ffffff;
+    padding: 2.8rem;
+    border-radius: 2rem;
+}
+
+.card img {
+    margin-bottom: 3.4rem;
+}
+
+.card h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.card p {
+    font-size: 1.6rem;
+}
+
+#formDiv{
+    padding: 8rem 5rem;
+}
+
+#formDiv form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.input-wrapper input, textarea, button {
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    border: 0.20rem solid var(--secondary-text-theme);
+    color: var(--secondary-text-theme);
+}
+
+.input-wrapper input::placeholder, textarea::placeholder, button::placeholder {
+    color: var(--secondary-text-theme);
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+}
+
+.input-wrapper input {
+    padding: 1.6rem 4.5rem;
+    width: 100%;
+}
+
+.input-wrapper textarea{
+    width: 100%;
+}
+
+.input-wrapper button {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: var(--background-colors);
+    border: 0;
+    cursor: pointer;
+}
+
+.input-wrapper button:hover {
+    filter: brightness(0.9);
+}
+
+#nameIcon {
+    background: url(./Assets/nameIcon.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#emailIcon {
+    background: url(./Assets/emailIcon.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#stars {
+    display: none;
+}
+
+footer {
+    display: flex;
+    background: var(--background-colors);
+    padding: 1.6rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 70rem){
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 11rem;
+        margin-bottom: 10rem;
+    }
+
+    #content div {
+        padding-top: 17rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #astronaut {
+        max-height: 70.2rem;
+    }
+
+    #content h1 {
+        color: var(--primary-text-theme);
+        font-size: 5.8rem;
+        font-weight: 900;
+    }
+    
+    #content p {
+        color: var(--secondary-text-theme);
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    #arrowDown{
+        margin-top: 180px;
+    }
+
+    #steps {
+        display: flex;
+        flex-direction: row;
+        padding: 6.4rem 11rem;
+    }
+
+    .card h1 {
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+    }
+    
+    .card p {
+        font-size: 2rem;
+    }
+
+    #formDiv {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        gap: 20rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #formDiv h1 {
+        font-size: 4.2rem;
+    }
+
+    #formDiv form{
+        padding: 9rem 0;
+        margin-left: 11rem;
+        width: 100%;
+        max-width: 50vw;
+    }
+
+    #formDiv img{
+        width: 100%;
+    }
+
+    #stars {
+        display: inline;
+    }
+}
